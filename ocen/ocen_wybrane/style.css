@@ -1,0 +1,449 @@
+
+:root {
+  --czy_przezroczyste: 1;
+}
+#head_bar{
+    opacity: 0;
+    font-size: 21px;
+    margin-top: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+#button1{
+ background-color: DodgerBlue;
+  color: #fff;
+}
+.params{
+  margin: 10px;
+  margin-left: 40px;
+
+}
+#model
+{
+  opacity: var(--czy_przezroczyste);
+ 
+}
+#typ{
+  opacity: var(--czy_przezroczyste);
+}
+#szybkosc_kolor{
+  opacity: var(--czy_przezroczyste);
+}
+#szybkosc_czarny{
+   opacity: var(--czy_przezroczyste);
+}
+#gwarancja{
+  opacity: var(--czy_przezroczyste);
+}
+#wifi{
+  opacity: var(--czy_przezroczyste);
+}
+#wifi>div>select
+{
+width:100%;
+padding:8px;
+}
+#duplex{
+  opacity: var(--czy_przezroczyste);
+}
+#duplex>div>select
+{
+width:100%;
+padding:8px;
+}
+#cena{
+  opacity: var(--czy_przezroczyste);
+}
+#ocena_eksperta{
+  opacity: var(--czy_przezroczyste);
+}
+#zdjecie{
+  opacity: var(--czy_przezroczyste);
+}
+#zakoncz{
+opacity: var(--czy_przezroczyste);
+}
+#zdjecie_drukarki{
+  width: 300px;
+  margin: 10px 0px 10px 0px;
+  background-position: center bottom;
+}
+
+/* auto podpowiedz */
+* {
+  box-sizing: border-box;
+}
+#head_bar{
+  opacity: 0;
+}
+
+body {
+  font: 16px Arial;  
+}
+
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+
+/* powrot button */
+
+#powrot{
+  margin-top: 80px;
+  width: 150px;
+  height: 50px;
+  position: fixed ;
+  right: 0px;
+}
+@media only screen and (max-width: 600px) {
+ #powrot{
+  margin-bottom: 50px;
+  width: 150px;
+  height: 50px;
+  position: fixed ;
+  bottom: 0px;
+}
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #FDFDFD;
+  margin: 25px 0;
+}
+
+span.title {
+  margin: 0 auto;
+  color: #BBB;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.85rem;
+  text-align: center;
+  display: block;
+}
+
+.basicBox, .swiggleBox, .checkBox {
+  width: 130px;
+  height: 65px;
+  margin: 15px auto;
+  color: #4274D3;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.15rem;
+  line-height: 65px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+svg rect, svg path, svg polyline {
+  fill: none;
+  stroke: #4274D3;
+  stroke-width: 4;
+}
+
+.basicBox:hover svg rect, .swiggleBox:hover svg path, .checkBox:hover svg polyline {
+  stroke: #4274D3;
+}
+
+/* Basic Box */
+svg rect {
+  stroke-dasharray: 400, 0;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+}
+.basicBox:hover svg rect {
+  stroke-width: 3;
+  stroke-dasharray: 35, 245;
+  stroke-dashoffset: 38;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+}
+
+/* Swiggle Box */
+svg path {
+  stroke-dasharray: 265, 0;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+.swiggleBox:hover svg path {
+  stroke-width: 3;
+  stroke-dasharray: 0, 350;
+  stroke-dashoffset: 20;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+
+/* Check Box */
+.checkBox {
+  /* Add Padding Left To Center Text */
+}
+.checkBox svg {
+  /* Presentation Purposes */
+  margin-left: -10px;
+}
+.checkBox svg rect, .checkBox svg polyline {
+  fill: none;
+  stroke: #4274D3;
+  stroke-width: 1;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+}
+.checkBox:hover svg rect {
+  stroke-width: 2;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+}
+.checkBox:hover svg polyline {
+  stroke-width: 2;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+}
+.checkBox svg .button {
+  stroke-dasharray: 400px, 0;
+}
+.checkBox:hover svg .button {
+  stroke-dasharray: 0, 400px;
+  stroke-dashoffset: 33px;
+}
+/* Check Mark Effect */
+.box, .checkMark {
+  opacity: 0;
+}
+.checkBox:hover .box {
+  -webkit-animation: boxDisplay 0.2s forwards;
+  -moz-animation: boxDisplay 0.2s forwards;
+  -ms-animation: boxDisplay 0.2s forwards;
+  -o-animation: boxDisplay 0.2s forwards;
+  animation: boxDisplay 0.2s forwards;
+  -webkit-animation-delay: 0.65s;
+  -moz-animation-delay: 0.65s;
+  -ms-animation-delay: 0.65s;
+  -o-animation-delay: 0.65s;
+  animation-delay: 0.65s;
+}
+.checkBox:hover .checkMark {
+  -webkit-animation: checkDisplay 0.2s forwards;
+  -moz-animation: checkDisplay 0.2s forwards;
+  -ms-animation: checkDisplay 0.2s forwards;
+  -o-animation: checkDisplay 0.2s forwards;
+  animation: checkDisplay 0.2s forwards;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+/* Check Box Display */
+@-webkit-keyframes boxDisplay {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes boxDisplay {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-ms-keyframes boxDisplay {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes boxDisplay {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes boxDisplay {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+/* Check Mark Display */
+@-webkit-keyframes checkDisplay {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes checkDisplay {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-ms-keyframes checkDisplay {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes checkDisplay {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes checkDisplay {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+#margin{
+  height: 100px;
+}
+
+.counter_style{
+  color: #0062cc;
+}
+#div_counter{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+#counter{
+display: inline-block;
+}
+
+
+#content{
+    display: flex;
+    margin: 20px;
+}
+#parametry{
+    width: 600px;
+}
+
+/* obsluga gwiazdek xd */
+.wrapper {
+                padding: 13px;
+               
+                width: 370px;
+                min-height: 20px;
+                /* border-radius: 5px; */
+                /* box-shadow: 0 0 10px rgba(0,0,0,.1); */
+                background-color: #fff;
+            }
+            .rating{
+                overflow: hidden;
+                vertical-align: bottom;
+                display: inline-block;
+                width: 350px;
+                height: 30px;
+                
+            }
+            .rating > input{
+                opacity: 0;
+                margin-right: -100%;
+            }
+            .rating > label{
+                position: relative;
+                display: block;
+                float: right;
+                background: url('star-off-big.png');
+                background-size: 30px 30px;
+            }
+            .rating > label:before{
+                display: block;
+                opacity: 0;
+                content: '';
+                width: 30px;
+                height: 30px;
+                background: url('star-on-big.png');
+                background-size: 30px 30px;
+                transition: opacity 0.2s linear;
+            }
+            .rating > label:hover:before,
+            .rating > label:hover ~ label:before,
+            .rating:not(:hover) > :checked ~ label:before{
+                opacity: 1;
+            }
+
+#grade{
+  display: flex;
+  justify-content: right;
+  
+}
+
+#main_grade{
+  display: flex;
+  height: 50px;
+}
+#jak_oceniasz{
+  width: 400px;
+  margin-left: 20px;
+}
+
+#photo{
+  height: 410px;
+  margin: 40px;
+}
+#main{
+  width: 1500px;
+}
+body{
+  
+  overflow-x: scroll; 
+}
